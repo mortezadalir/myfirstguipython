@@ -1,32 +1,48 @@
-from Tkinter import *
-from Tkinter import filedialog
-window=Tk()
-window.geometry('350x200')
-window.title("calculator")
-#lbl=Label(window, text="hello",font=("times new roman",10))
-#lbl.grid(column=1,row=5)
-#btn=Button(window,text="click Me")
-#btn.grid(column=1,row=0)
-btn0=Button(window,text="    0     ",bg="white")
-btn0.grid(column=1,row=5)
-btn1=Button(window,text="    1     ",bg="white")
-btn1.grid(column=1,row=4)
-btn2=Button(window,text="    2     ",bg="white")
-btn2.grid(column=2,row=4)
-btn3=Button(window,text="    3     ",bg="white")
-btn3.grid(column=3,row=4)
-btn4=Button(window,text="    4     ",bg="white")
-btn4.grid(column=1,row=3)
-btn5=Button(window,text="    5     ",bg="white")
-btn5.grid(column=2,row=3)
-btn6=Button(window,text="    6     ",bg="white")
-btn6.grid(column=3,row=3)
-btn7=Button(window,text="    7     ",bg="white")
-btn7.grid(column=1,row=2)
-btn8=Button(window,text="    8     ",bg="white")
-btn8.grid(column=2,row=2)
-btn9=Button(window,text="    9     ",bg="white")
-btn9.grid(column=3,row=2)
-txt= Entry(window,width=5)
-txt.grid(column=1,row=1)
-window.mainloop()
+import tkinter as tk
+from tkinter import filedialog, Text
+import tkinter.font as font
+import os
+
+root=tk.Tk()
+canvas=tk.Canvas(root,height=400,width=300,bg=('red'))
+canvas.pack()
+
+helv36 = font.Font(family='Helvetica', size=25)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 5) .place(x=15, y=350)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width =5 ) .place(x=125, y=350)
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 5) .place(x=180, y=236)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=15, y=236)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=70, y=236)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=125, y=236)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=15, y=132)
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=70, y=132)
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=125, y=132)
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=180, y=132)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=15, y=188)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=70, y=188)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=125, y=188)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=180, y=188)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=180, y=80)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=15, y=80)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=70, y=80)
+
+btn0=tk.Button(canvas,text="0",font=helv36,bg='black',fg="white",height = 1, width = 2) .place(x=125, y=80)
+
+w = tk.Label(root, text="Hello, world!",height=3,width=30,bg='white',fg='black')
+w=w.place(x=15, y=10)
+
+
+root.mainloop()
